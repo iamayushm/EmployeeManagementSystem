@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+        <table class="bg bg-dark text-white table table-info table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">DOB</th>
+                  <th scope="col"> Update </th>
+                  <th scope="col"> Delete </th>
+                </tr>
+              </thead>
+        {% for post in posts.values() %}
+              <tbody>
+                <tr>
+                  <td>{{ post['FirstName'] }}</td>
+                  <td>{{post['LastName'] }}</td>
+                  <td>{{ post['email'] }}</td>
+                  <td>{{ post['phone'] }}</td>
+                  <td>{{ post['address'] }}</td>
+                  <td>{{ post['dob'] }}</td>
+                  <td> <a class="btn btn-secondary btn-small m-1" href=" {{ url_for ('update_employee',employee_id= post['id'] ) }} " > Update </a></td>
+                  <td> <button type="button" class="btn btn-danger btn-small m-1" data-toggle="modal" data-target="#deleteModal">Delete</button></td>
+                </tr>
+              </tbody>
+             <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="deleteModalLabel">Delete Employee?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <form action="{{ url_for ('delete_employee',employee_id= post['id']  ) }} " method="POST">
+                    <input class="btn btn-danger" type="submit" value="Delete">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </table>
+
+{% endblock content %}

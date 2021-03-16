@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+   <table class="table table-bordered table-dark table-hover ">
+
+      <thead>
+        <tr>
+            <th  colspan = "2" style="text-align: center" > Employee Details </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>First Name</th>
+          <td> {{ current_user.FirstName }} </td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td>{{ current_user.LastName }}</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td> {{current_user.email}}  </td>
+        </tr>
+        <tr>
+          <th> phone </th>
+          <td>  {{current_user.phone }} </td>
+        </tr>
+        <tr>
+          <th> Address </th>
+          <td>  {{ current_user.address }} </td>
+        </tr>
+        <tr>
+          <th> Date Of Birth </th>
+          <td>  {{current_user.dob.strftime('%Y-%m-%d') }} </td>
+        </tr>
+        <tr>
+          <td>  <a class="btn btn-secondary btn-small m-1" href="{{ url_for ('update_employee',employee_id= current_user.id) }}" > Update </a> </td>
+        </tr>
+
+      </tbody>
+   </table>
+{% endblock content %}

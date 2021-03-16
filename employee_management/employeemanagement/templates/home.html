@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {% if current_user.is_authenticated %}
+        {% for announcement in announcements%}
+            <article class="media content-section bg bg-dark text-white w-auto h-auto" >
+              <div class="media-body ">
+                <h2 style=" color:white ">{{ announcement.title }}</h2>
+                <p class="article-content">{{ announcement.content }}</p>
+              </div>
+               {% if current_user.is_authenticated %}
+
+                    {% if current_user.isAdmin%}
+                      <div>
+                          <a class="btn btn-secondary btn-small m-1" href="{{ url_for ('update_announcement',announcement_id= announcement.id) }}" > Update </a>
+                          <a class="btn btn-danger btn-small m-1" href="{{ url_for('delete_announcement', announcement_id=announcement.id) }}" > Delete </a>
+
+
+                      </div>
+                    {%  endif %}
+               {% endif %}
+            </article>
+        {% endfor %}
+
+    {% else %}
+
+        
+    <img src="{{url_for('static', filename='coverimage.jpg')}}"  class = "border img-responsive" width = "130%"  height="400px"  style ="margin-left:65px" />
+
+    {% endif %}
+
+{% endblock content %}

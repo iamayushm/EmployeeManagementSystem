@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+        <table class="table table-info table-responsive bg-dark text-white border border-dark">
+              <thead>
+                <tr>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">DOB</th>
+                  <th scope="col"> Update</th>
+                  <th scope="col"> Delete </th>
+                </tr>
+              </thead>
+        {% for post in posts %}
+              <tbody>
+                <tr>
+                  <td>{{post.FirstName}}</td>
+                  <td>{{post.LastName}}</td>
+                  <td>{{post.email}}</td>
+                  <td>{{post.phone}}</td>
+                  <td>{{post.address}}</td>
+                  <td>{{post.dob}}</td>
+                  <td> <a class="btn btn-secondary btn-small m-1" href="{{ url_for ('update_employee',employee_id= post.id) }}" > Update </a></td>
+                  <td> <a class="btn btn-danger btn-small m-1" href="{{ url_for('delete_employee', employee_id=post.id) }}" > Delete </a></td>
+                </tr>
+              </tbody>
+        {% endfor %}
+        </table>
+
+{% endblock content %}
+
+{% block search %}
+
+
+    <form method="POST" action="" class="form">
+
+        {{ form.hidden_tag() }}
+
+        <fieldset class="form-group ">
+
+            <legend class="border-bottom-mb-4  text-center  " > Search Employee</legend>
+
+            <div class="form-group " >
+                {{ form.name.label(class="form-control-label") }}
+                {% if form.name.errors %}
+                    {{ form.name(class="form-control form-control-lg is-invalid ") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.name.errors %}
+                            <span> {{ error }} </span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.name(class="form-control form-control-lg ") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.lname.label(class="form-control-label") }}
+                {% if form.lname.errors %}
+                    {{ form.lname(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.lname.errors %}
+                            <span> {{ error }} </span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.lname(class="form-control form-control-lg ") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.address.label(class="form-control-label") }}
+                {% if form.address.errors %}
+                    {{ form.address(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid-feedback">
+                        {% for error in form.address.errors %}
+                            <span> {{ error }} </span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.address(class="form-control form-control-lg ") }}
+                {% endif %}
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info bg-info text-white text-center ")}}
+        </div>
+
+    </form>
+
+{% endblock %}
