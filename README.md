@@ -20,7 +20,8 @@ Make sure that while running the command your docker-compose file is present in 
 ## register
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/9f16c95e7f4b2c32072de102fccd44616e0b9100/register.PNG)
 
-
+## Admin Screen and search form
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/b1984d6041c444ae9b79b49c0c638e74b7f4b118/Masterscreen.PNG)
 
 ## Reset Password
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/18a605eb62b4c90898db922a41646b164959e63f/ResetPassword.PNG)
