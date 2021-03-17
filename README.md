@@ -14,8 +14,8 @@ Make sure that while running the command your docker-compose file is present in 
 
 # Screenshots
 
-![Test Image 4](https://github.com/tograh/testrepository/3DTest.png 1.0k)
-
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/18a605eb62b4c90898db922a41646b164959e63f/ResetPassword.PNG)
+Format: ![Alt Text](url)
 
 
 
