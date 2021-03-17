@@ -1,6 +1,6 @@
 # EmployeeManagementSystem/ Flask application
 Employee Management Web Application built using Flask and SQLAlchemy .This application supports two roles , Admin and Employee. An employee will register himself into organisation.Admin has rights to delete,update details of an employee.
-There is an Api named search_microservice which returns Details of an employee based on given Name and Address.Api is secured using http authentication and only admin has rights to access this Api.
+There is an Api named search_microservice which returns Details of an employee based on given Name and Address.API is secured using http authentication and only admin has rights to access this API.
 
 # Installtion
 1) Python
@@ -17,8 +17,13 @@ Make sure that while running the command your docker-compose file is present in 
 ## login
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/fbec0e89e97145b6190ea98afd382a11c35594e4/login.PNG)
 
+
 ## register
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/9f16c95e7f4b2c32072de102fccd44616e0b9100/register.PNG)
+
+## Employee Screen
+
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/c769a81fa50b368289cb16e333f06f93b2579faa/userpage.PNG)
 
 ## Admin Screen and search form
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/b1984d6041c444ae9b79b49c0c638e74b7f4b118/Masterscreen.PNG)
