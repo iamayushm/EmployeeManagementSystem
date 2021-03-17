@@ -14,7 +14,8 @@ Make sure that while running the command your docker-compose file is present in 
 
 # Screenshots
 
-
+![GitHub Logo](/login.png)
+Format: ![Alt Text](url)
 
 
 
