@@ -16,7 +16,7 @@ Make sure that while running the command your docker-compose file is present in 
 
 ## login
   
-!(https://github.com/iamayushm/EmployeeManagementSystem/blob/fbec0e89e97145b6190ea98afd382a11c35594e4/login.PNG)
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/fbec0e89e97145b6190ea98afd382a11c35594e4/login.PNG)
 
 ## register
 
