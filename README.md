@@ -6,4 +6,7 @@ There is an Api named search_microservice which returns Details of an employee b
 ### Deploy with docker compose
 Clone the project and run the following command : <br/>
 $ docker-compose up -d
+Make sure that while running the command your docker-compose file is present in your working directory.
+
+
 
