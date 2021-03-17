@@ -14,27 +14,33 @@ Make sure that while running the command your docker-compose file is present in 
 
 # Screenshots
 
-## login
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/fbec0e89e97145b6190ea98afd382a11c35594e4/login.PNG)
 
 
-## register
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/9f16c95e7f4b2c32072de102fccd44616e0b9100/register.PNG)
+## Register
+<img width="941" alt="register" src="https://user-images.githubusercontent.com/32041961/111462541-8ee79680-8744-11eb-9a50-66e64808de8e.PNG">
+
+## Login
+<img width="960" alt="login" src="https://user-images.githubusercontent.com/32041961/111462493-82633e00-8744-11eb-9808-1125672c90b9.PNG">
+
 
 ## Employee Screen
+<img width="947" alt="userpage" src="https://user-images.githubusercontent.com/32041961/111462438-74152200-8744-11eb-83f0-f720a6d3106f.PNG">
 
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/c769a81fa50b368289cb16e333f06f93b2579faa/userpage.PNG)
 
 ## Admin Screen and search form
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/b1984d6041c444ae9b79b49c0c638e74b7f4b118/Masterscreen.PNG)
+<img width="943" alt="Masterscreen" src="https://user-images.githubusercontent.com/32041961/111462410-6a8bba00-8744-11eb-9ee9-1e24316ef6ab.PNG">
+
 
 ## Admin can add an announcement
-
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/4c1523833c63092027cbf1774cdf09e07b705de0/adminann.PNG)
+<img width="924" alt="adminann" src="https://user-images.githubusercontent.com/32041961/111462377-61025200-8744-11eb-9e62-1716418bff3b.PNG">
 
 
 ## Reset Password
-![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/18a605eb62b4c90898db922a41646b164959e63f/ResetPassword.PNG)
+<img width="908" alt="ResetPassword" src="https://user-images.githubusercontent.com/32041961/111462329-534ccc80-8744-11eb-9967-66dd7d817d5d.PNG">
+
+
+## Docker 
+<img width="956" alt="Container" src="https://user-images.githubusercontent.com/32041961/111462308-49c36480-8744-11eb-9a4e-1fa650c71c31.PNG">
 
 
 
