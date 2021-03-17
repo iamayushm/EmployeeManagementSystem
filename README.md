@@ -15,11 +15,14 @@ Make sure that while running the command your docker-compose file is present in 
 # Screenshots
 
 ## login
-  
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/fbec0e89e97145b6190ea98afd382a11c35594e4/login.PNG)
 
 ## register
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/9f16c95e7f4b2c32072de102fccd44616e0b9100/register.PNG)
 
+
+
+## Reset Password
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/18a605eb62b4c90898db922a41646b164959e63f/ResetPassword.PNG)
 
 
