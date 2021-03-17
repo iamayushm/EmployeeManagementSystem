@@ -28,6 +28,11 @@ Make sure that while running the command your docker-compose file is present in 
 ## Admin Screen and search form
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/b1984d6041c444ae9b79b49c0c638e74b7f4b118/Masterscreen.PNG)
 
+## Admin can add an announcement
+
+![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/4c1523833c63092027cbf1774cdf09e07b705de0/adminann.PNG)
+
+
 ## Reset Password
 ![GitHub Logo](https://github.com/iamayushm/EmployeeManagementSystem/blob/18a605eb62b4c90898db922a41646b164959e63f/ResetPassword.PNG)
 
