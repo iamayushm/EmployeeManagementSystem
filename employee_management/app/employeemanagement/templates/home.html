@@ -3,12 +3,12 @@
 
     {% if current_user.is_authenticated %}
         {% for announcement in announcements%}
-            <article class="media content-section bg bg-dark text-white w-auto h-auto" >
+            <article class="media content-section bg bg-dark text-white " >
               <div class="media-body ">
                 <h2 style=" color:white ">{{ announcement.title }}</h2>
                 <p class="article-content">{{ announcement.content }}</p>
-              </div>
-               {% if current_user.is_authenticated %}
+
+                  {% if current_user.is_authenticated %}
 
                     {% if current_user.isAdmin%}
                       <div>
@@ -18,14 +18,16 @@
 
                       </div>
                     {%  endif %}
-               {% endif %}
+                  {% endif %}
+
+              </div>
+
             </article>
         {% endfor %}
 
     {% else %}
 
-        
-    <img src="{{url_for('static', filename='coverimage.jpg')}}"  class = "border img-responsive" width = "130%"  height="400px"  style ="margin-left:65px" />
+        <img src="{{url_for('static', filename='coverimage.jpg')}}"  class = "border img-responsive" width = "130%"  height="400px"  style ="margin-left:65px" />
 
     {% endif %}
 
