@@ -21,8 +21,8 @@ login_manager.login_message_category = 'info'
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = "ayushmaheshwari8085@gmail.com"
-app.config['MAIL_PASSWORD'] = "iamsupercool"
+app.config['MAIL_USERNAME'] = ""          
+app.config['MAIL_PASSWORD'] = ""          
 mail = Mail(app)
 
 
